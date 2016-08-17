@@ -25,7 +25,7 @@ curl -i "/projects/4ef62672-22aa-4eb7-92c3-dee8495fac4b"
       "provider": "GitHub",
       "url": "https://github.com/ARMmbed/example-mbedos-blinky",
       "imports": 5043,
-      "protocol": "git",
+      "protocol": "Git",
       "summary": "Simple example program to blink an LED on an mbed board with mbed OS",
       "description": null,
       "follower_count": 3064,

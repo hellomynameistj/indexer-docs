@@ -17,10 +17,11 @@ includes:
 search: true
 ---
 
-# Introduction
+# mbed Project Indexer
 
-Welcome to the ARM mbed Indexer API! You can use this API to get data about mbed
-projects, create new projects in the indexer, or modify existing projects.
+Welcome to the ARM mbed Indexer API documentation! You can use this API to get
+data about mbed projects, create new projects in the indexer, or modify existing
+projects.
 
 A "project" is simply a resource which describes where to find source code for
 a program that is compatible with an ARM mbed enabled platform. The resource also

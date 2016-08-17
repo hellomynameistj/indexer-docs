@@ -1,5 +1,31 @@
 ## Modify
 
+```python
+import requests
+
+data = {
+    "data": {
+        "type": "project",
+        "attributes": {
+            "title": "A new title for my project",
+        }
+    }
+}
+headers = {
+    "Accept": "application/vnd.api+json",
+    "Content-Type": "application/vnd.api+json"
+}
+
+response = requests.patch("/projects", headers=headers, data=data)
+```
+
+```shell
+curl -X PATCH /projects 
+  -H "Accept: application/vnd.api+json"
+  -H "Content-Type: application/vnd.api+json"
+  -d '{"data":{"type":"project","attributes""{"title":"A new title for my project"}}}'
+```
+
 Use this endpoint to modify a project resource
 
 ### HTTP Request

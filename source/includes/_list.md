@@ -26,7 +26,7 @@ curl -i "/projects"
         "provider": "GitHub",
         "url": "https://github.com/ARMmbed/example-mbedos-blinky",
         "imports": 5043,
-        "protocol": "git",
+        "protocol": "Git",
         "summary": "Simple example program to blink an LED on an mbed board with mbed OS",
         "description": null,
         "follower_count": 3064,
@@ -109,4 +109,4 @@ Get a list of projects where number of imports are greater than 500
 You can also use mutliple filters in a single request, e.g. get a list of
 projects where the vcs is git, the supported mbed OS version is 5, and the
 project's license is MIT  
-`GET /projects?[protocol],eq=git&[mbed_os_version],eq=5&[license],eq=MIT`
+`GET /projects?[protocol],eq=Git&[mbed_os_version],eq=5&[license],eq=MIT`
