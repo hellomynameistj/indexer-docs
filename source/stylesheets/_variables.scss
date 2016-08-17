@@ -15,33 +15,31 @@ under the License.
 */
 
 
-////////////////////////////////////////////////////////////////////////////////
-// CUSTOMIZE SLATE
-////////////////////////////////////////////////////////////////////////////////
-// Use these settings to help adjust the appearance of Slate
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 // BACKGROUND COLORS
-////////////////////
-$nav-bg: #393939;
-$examples-bg: #393939;
+$light-blue: #4A97B7;
+$med-blue: #3B799A;
+$dark-blue: #316682;
+
+$nav-bg: $light-blue;
+$examples-bg: $light-blue;
 $code-bg: #292929;
 $code-annotation-bg: #1c1c1c;
-$nav-subitem-bg: #262626;
-$nav-active-bg: #2467af;
+$nav-subitem-bg: $med-blue;
+$nav-active-bg: $dark-blue;
 $lang-select-border: #000;
-$lang-select-bg: #222;
-$lang-select-active-bg: $examples-bg; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111; // color of language tab bg when mouse is pressed
+$lang-select-bg: $med-blue;
+$lang-select-active-bg: $light-blue;
+$lang-select-pressed-bg: $dark-blue;
 $main-bg: #eaf2f6;
 $aside-notice-bg: #8fbcd4;
 $aside-warning-bg: #c97a7e;
 $aside-success-bg: #6ac174;
-$search-notice-bg: #c97a7e;
+$search-notice-bg: $med-blue;
 
 
 // TEXT COLORS
-////////////////////
 $main-text: #333; // main content text color
 $nav-text: #fff;
 $nav-active-text: #fff;
@@ -51,7 +49,6 @@ $lang-select-pressed-text: #fff; // color of language tab text when mouse is pre
 
 
 // SIZES
-////////////////////
 $nav-width: 230px; // width of the navbar
 $examples-width: 50%; // portion of the screen taken up by code examples
 $logo-margin: 20px; // margin between nav items and logo, ignored if search is active
@@ -66,31 +63,29 @@ $phone-width: $tablet-width - $nav-width; // min width before reverting to mobil
 
 
 // FONTS
-////////////////////
 %default-font {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
-  font-size: 13px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
 }
 
 %header-font {
   @extend %default-font;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 %code-font {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 
 // OTHER
-////////////////////
-$nav-active-shadow: #000;
-$nav-footer-border-color: #666;
-$nav-embossed-border-top: #000;
-$nav-embossed-border-bottom: #939393;
-$main-embossed-text-shadow: 0px 1px 0px #fff;
+$nav-active-shadow: $med-blue;
+$nav-footer-border-color: $med-blue;
+$nav-embossed-border-top: $med-blue;
+$nav-embossed-border-bottom: $med-blue;
+$main-embossed-text-shadow: 0px 0px 0px $med-blue;
 $search-box-border-color: #666;
 
 

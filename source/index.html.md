@@ -13,7 +13,6 @@ includes:
   - list
   - post
   - patch
-  - errors
 
 search: true
 ---
