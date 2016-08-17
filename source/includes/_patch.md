@@ -28,12 +28,13 @@ curl -X PATCH /projects
 
 Use this endpoint to modify a project resource
 
-### HTTP Request
+<br />
+**HTTP Request**
 
 `PATCH /projects/<UUID>`
 
 <br />
-**URL parameters**
+URL parameters:
 
 Parameter | Description
 --------- | -----------

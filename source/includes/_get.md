@@ -43,12 +43,13 @@ curl -i "/projects/4ef62672-22aa-4eb7-92c3-dee8495fac4b"
 
 This endpoint retrieves a specific project via its UUID.
 
-### HTTP Request
+<br />
+**HTTP Request**
 
 `GET /projects/<UUID>`
 
 <br />
-**URL parameters**
+URL parameters:
 
 Parameter | Description
 --------- | -----------

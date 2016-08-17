@@ -52,21 +52,22 @@ a maximum limit of 100. Pagination is done using a limit and offset parameter.
 The results retrieved from this endpoint can also be sorted and filtered on the
 resource's attributes. 
 
-### HTTP Request
+<br />
+**HTTP Request**
 
 `GET /projects`
 
 <br />
-**Query parameters**
+Query parameters:
 
 Parameter | Default | Description
 --------- | ------- | -----------
 `limit`   | 10      | The number of resources to be retrieved, maximum value of 100. 
 `offset`  | 0       | The offset at which to start the list of resources.
-`sort`    | N\A     | Sort the results by a given field's values e.g. `sort=value`. Value can be prefixed with a `-` character for descending order.
+`sort`    | N\A     | Sort the results by a given field's values e.g. `sort=<field>`. `field` can be prefixed with a `-` character for descending order.
 
-
-### Filtering
+<br />
+**Filtering**
 
 You can filter the results that are retrieved from the API by applying logical
 operators on the fields of the resource you are retrieving. The filter is simply
@@ -77,7 +78,7 @@ a GET parameter. The following syntax is required for the filter argument:
 Mutliple filters may be used in a single request.
 
 <br />
-**Filter parameters**
+Filter parameters:
 
 Parameter | Description
 --------- | -----------
@@ -86,7 +87,7 @@ Parameter | Description
 `value`   | This is the value the operator uses to filter the resources by.
 
 <br />
-**Filter operators**
+Filter operators:
 
 Operator | Description              | Logical representation
 -------- | ------------------------ | ----------------------
@@ -98,7 +99,7 @@ Operator | Description              | Logical representation
 `le`     | less than or equal to    | `<=`
 
 <br />
-**Example requests using filters**
+Example requests using filters:
 
 Get a list of projects with the Apache 2.0 license  
 `GET /projects?[license],eq=Apache 2.0`

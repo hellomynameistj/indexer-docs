@@ -29,7 +29,8 @@ curl -X POST /projects
 
 Use this endpoint to create a new project resource.
 
-### HTTP Request
+<br />
+**HTTP Request**
 
 `POST /projects`
 
