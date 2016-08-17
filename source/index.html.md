@@ -54,24 +54,24 @@ resource's attributes, and whether they are editable via the indexer API.
 
 Attribute      | Description                                                                                           | Editable
 -------------- | ----------------------------------------------------------------------------------------------------- | --------
-id             | A UUID according to [RFC 4122](https://tools.ietf.org/html/rfc4122.html) which identifies the project | No
-title          | The title of the project                                                                              | Yes
-description    | A long description of the project                                                                     | Yes
-url            | The URL of the project's repository                                                                   | Yes
-version        | The version of this program - e.g. a hash of a git commit or release tag                              | Yes
-provider       | The version control system provider for the repo                                                      | No
-protocol       | The version control protocol, e.g. Git, Mercurial, etc.                                               | No
-imports        | The number of times this project has been imported into official mbed development tools               | No
-repo_owner     | The user who own's this project's repo, e.g. a GitHub or Bitbucket username                           | No
-repo_name      | The repo's name as it appears in the repo URL                                                         | No
-release_date   | The release date of this version                                                                      | No
-license        | The license of the program                                                                            | No
-commit_count   | The number of commits to this project's repo                                                          | No
-fork_count     | The number of times this project has been forked                                                      | No
-branch_count   | The number of branches this project's repo has                                                        | No
-follower_count | The number of followers/stars/watchers for this repo                                                  | No
-summary        | A short summary of the repo (comes from repo metadata)                                                | No
-readme         | The README file from the repo                                                                         | No
+id             | A UUID according to [RFC 4122](https://tools.ietf.org/html/rfc4122.html) which identifies the project | <i class="fa fa-times"></i>
+title          | The title of the project                                                                              | <i class="fa fa-check"></i>
+description    | A long description of the project                                                                     | <i class="fa fa-check"></i>
+url            | The URL of the project's repository                                                                   | <i class="fa fa-check"></i>
+version        | The version of this program - e.g. a hash of a git commit or release tag                              | <i class="fa fa-check"></i>
+provider       | The version control system provider for the repo                                                      | <i class="fa fa-times"></i>
+protocol       | The version control protocol, e.g. Git, Mercurial, etc.                                               | <i class="fa fa-times"></i>
+imports        | The number of times this project has been imported into official mbed development tools               | <i class="fa fa-times"></i>
+repo_owner     | The user who own's this project's repo, e.g. a GitHub or Bitbucket username                           | <i class="fa fa-times"></i>
+repo_name      | The repo's name as it appears in the repo URL                                                         | <i class="fa fa-times"></i>
+release_date   | The release date of this version                                                                      | <i class="fa fa-times"></i>
+license        | The license of the program                                                                            | <i class="fa fa-times"></i>
+commit_count   | The number of commits to this project's repo                                                          | <i class="fa fa-times"></i>
+fork_count     | The number of times this project has been forked                                                      | <i class="fa fa-times"></i>
+branch_count   | The number of branches this project's repo has                                                        | <i class="fa fa-times"></i>
+follower_count | The number of followers/stars/watchers for this repo                                                  | <i class="fa fa-times"></i>
+summary        | A short summary of the repo (comes from repo metadata)                                                | <i class="fa fa-times"></i>
+readme         | The README file from the repo                                                                         | <i class="fa fa-times"></i>
 
 
 # Authentication

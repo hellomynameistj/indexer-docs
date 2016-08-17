@@ -16,6 +16,7 @@ under the License.
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import '../font-awesome-4.6.3/css/font-awesome.min.css';
 
 // BACKGROUND COLORS
 $light-blue: #4A97B7;
@@ -46,6 +47,9 @@ $nav-active-text: #fff;
 $lang-select-text: #fff; // color of unselected language tab text
 $lang-select-active-text: #fff; // color of selected language tab text
 $lang-select-pressed-text: #fff; // color of language tab text when mouse is pressed
+
+.fa-check { color: #00C473; }
+.fa-times { color: red; }
 
 
 // SIZES

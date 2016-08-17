@@ -62,9 +62,9 @@ Query parameters:
 
 Parameter | Default | Description
 --------- | ------- | -----------
-`limit`   | 10      | The number of resources to be retrieved, maximum value of 100. 
-`offset`  | 0       | The offset at which to start the list of resources.
-`sort`    | N\A     | Sort the results by a given field's values e.g. `sort=<field>`. `field` can be prefixed with a `-` character for descending order.
+limit     | 10      | The number of resources to be retrieved, maximum value of 100. 
+offset    | 0       | The offset at which to start the list of resources.
+sort      | N\A     | Sort the results by a given field's values e.g. `sort=<field>`. `field` can be prefixed with a `-` character for descending order.
 
 <br />
 **Filtering**
@@ -82,21 +82,21 @@ Filter parameters:
 
 Parameter | Description
 --------- | -----------
-`field`   | The field parameter must correspond to a field that belongs to the resource you are filtering.
-`op`      | This is the logical operator to apply. See the filter operators table below.
-`value`   | This is the value the operator uses to filter the resources by.
+field     | The field parameter must correspond to a field that belongs to the resource you are filtering.
+op        | This is the logical operator to apply. See the filter operators table below.
+value     | This is the value the operator uses to filter the resources by.
 
 <br />
 Filter operators:
 
 Operator | Description              | Logical representation
 -------- | ------------------------ | ----------------------
-`eq`     | equal to                 | `==`
-`ne`     | not equal                | `!=`
-`gt`     | greater than             | `>`
-`lt`     | less than                | `<`
-`ge`     | greater than or equal to | `>=`
-`le`     | less than or equal to    | `<=`
+eq       | equal to                 | `==`
+ne       | not equal                | `!=`
+gt       | greater than             | `>`
+lt       | less than                | `<`
+ge       | greater than or equal to | `>=`
+le       | less than or equal to    | `<=`
 
 <br />
 Example requests using filters:
