@@ -67,6 +67,16 @@ offset    | 0       | The offset at which to start the list of resources.
 sort      | N\A     | Sort the results by a given field's values e.g. `sort=<field>`. `field` can be prefixed with a `-` character for descending order.
 
 <br />
+**Pagination**
+
+The JSON response includes a top-level key `links` which includes the URL for
+current requested page (`self`) along with the URLs for the next and previous pages
+(`next` and `prev` respectively). These links can be used to page through the
+requested set by making GET requests on these URLs. The final page will not have
+a `next` key in the `links` section, and the first page will not have a `prev` key.
+See the code panel on the right for an example.
+
+<br />
 **Filtering**
 
 You can filter the results that are retrieved from the API by applying logical
@@ -111,3 +121,22 @@ You can also use mutliple filters in a single request, e.g. get a list of
 projects where the vcs is git, the supported mbed OS version is 5, and the
 project's license is MIT  
 `GET /projects?[protocol],eq=Git&[mbed_os_version],eq=5&[license],eq=MIT`
+
+<br />
+**Response**  
+The indexer will respond to a successful fetch with a `200` status code, along
+with a list of the fetched resources serialized as JSON.
+
+<br />
+**Errors**
+
+The following HTTP errors can arise if there are errors in the request. Please see
+the [content negotiation](http://jsonapi.org/format/#content-negotiation-servers)
+and [fetch responses](http://jsonapi.org/format/#fetching-resources-responses) sections
+of the JSON API spec for more detail as to why these errors can occur.
+
+Status                       | Description
+---------------------------- | -----------
+`400 BAD REQUEST`            | Request's GET parameters are invalid/badly formatted.
+`406 NOT ACCEPTABLE`         | Request's Accept header does not conform to JSON spec.
+`415 UNSUPPORTED MEDIA TYPE` | Request's media type does not conform to JSON spec.

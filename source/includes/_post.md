@@ -59,3 +59,17 @@ are required.
 **Response**  
 The indexer will respond to a successful creation with a `201 CREATED` status
 code, along with the newly created resource serialized as JSON.
+
+<br />
+**Errors**
+
+The following HTTP errors can arise if there are errors in the request. Please see
+the [content negotiation](http://jsonapi.org/format/#content-negotiation-servers)
+and [create responses](http://jsonapi.org/format/#crud-creating-responses) sections
+of the JSON API spec for more detail as to why these errors can occur.
+
+Status                       | Description
+---------------------------- | -----------
+`403 FORBIDDEN`              | Request's JSON data does not conform to JSON spec.
+`406 NOT ACCEPTABLE`         | Request's Accept header does not conform to JSON spec.
+`415 UNSUPPORTED MEDIA TYPE` | Request's media type does not conform to JSON spec.

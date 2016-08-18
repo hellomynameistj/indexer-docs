@@ -63,3 +63,19 @@ supplied here will replace the project's current attributes.
 **Response**  
 The indexer will respond to a successful modification with a `200` status code,
 along with the modified resource serialized as JSON.
+
+<br />
+**Errors**
+
+The following HTTP errors can arise if there are errors in the request. Please see
+the [content negotiation](http://jsonapi.org/format/#content-negotiation-servers)
+and [update responses](http://jsonapi.org/format/#crud-updating-responsess) sections
+of the JSON API spec for more detail as to why these errors can occur.
+
+Status                       | Description
+---------------------------- | -----------
+`404 NOT FOUND`              | UUID does not match existing resource.
+`403 FORBIDDEN`              | Request's JSON data does not conform to JSON spec.
+`406 NOT ACCEPTABLE`         | Request's Accept header does not conform to JSON spec.
+`409 CONFLICT`               | The required `id` or `type` fields in the request's JSON document do not match the resource.
+`415 UNSUPPORTED MEDIA TYPE` | Request's media type does not conform to JSON spec.
